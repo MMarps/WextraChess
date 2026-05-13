@@ -1,0 +1,49 @@
+# Environnement & Secrets
+.env
+.env.local
+.env.*.local
+
+# Node (frontend + backend si Node)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+build/
+.next/
+.nuxt/
+out/
+
+# Build outputs
+*.tsbuildinfo
+
+# IDE & Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+*.log
+
+# Docker
+.dockerignore
+
+# Python (si tu as du Python plus tard)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Misc
+.cache/
+tmp/
+*.tmp
