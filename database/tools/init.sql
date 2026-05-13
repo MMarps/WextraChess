@@ -18,8 +18,8 @@ CREATE TABLE IF NOT EXISTS games (
     black_player_id INT REFERENCES users(id) ON DELETE SET NULL,
     winner_id INT REFERENCES users(id) ON DELETE SET NULL,
 
-    status TEXT NOT NULL DEFAULT 'pending',
-    result TEXT NOT NULL DEFAULT '0-0',
+    status games_status NOT NULL DEFAULT 'pending',
+    result games_results NOT NULL DEFAULT '0-0',
 
     started_at TIMESTAMPTZ,
     ended_at TIMESTAMPTZ,
